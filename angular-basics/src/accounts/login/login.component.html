@@ -1,0 +1,18 @@
+
+
+<fieldset>
+    <legend>Login</legend>
+    <form #form="ngForm" (submit)="logForm(form.value)">
+        <section>
+            <label>UserName</label>    
+            <input type="text" name="username" [(ngModel)]="username">
+        </section>
+
+        <section>
+            <label>Password</label>    
+            <input type="password" name="password" ngModel>
+        </section>
+
+        <input type ="submit" value="Login">
+    </form>
+</fieldset>
