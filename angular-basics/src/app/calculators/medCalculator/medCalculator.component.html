@@ -1,0 +1,9 @@
+Med Calculator!!!
+
+<fieldset>
+<med-calculator-input 
+        (onInputChange)="setMedCalculatorInput($event)"
+        (onResetEvent)="resetValues($event)"></med-calculator-input>
+
+<med-calculator-output [meldScore]="medScore" ></med-calculator-output>
+</fieldset>
